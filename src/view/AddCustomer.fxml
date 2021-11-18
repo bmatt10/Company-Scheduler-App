@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="506.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomer">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="506.0" prefWidth="964.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="42.0" layoutY="16.0" text="Add Customer">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="103.0" text="CustomerID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CustomerIDText" disable="true" layoutX="140.0" layoutY="101.0" prefHeight="25.0" prefWidth="146.0" />
+            <Label layoutX="23.0" layoutY="137.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="167.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="200.0" text="Postal code">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="270.0" text="Country">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="234.0" text="Phone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NameText" layoutX="140.0" layoutY="135.0" prefHeight="25.0" prefWidth="146.0" />
+            <TextField fx:id="AddressText" layoutX="140.0" layoutY="165.0" prefHeight="25.0" prefWidth="146.0" />
+            <TextField fx:id="PostalCodeText" layoutX="140.0" layoutY="198.0" prefHeight="25.0" prefWidth="146.0" />
+            <TextField fx:id="PhoneText" layoutX="140.0" layoutY="231.0" prefHeight="25.0" prefWidth="146.0" />
+            <ComboBox fx:id="CountryCB" layoutX="140.0" layoutY="268.0" onAction="#CountryCBClicked" prefHeight="25.0" prefWidth="146.0" />
+            <Label layoutX="16.0" layoutY="314.0" text="First Level Division">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="FLDCB" layoutX="141.0" layoutY="312.0" prefHeight="25.0" prefWidth="146.0" />
+            <TableView fx:id="CustomerTable" layoutX="312.0" layoutY="59.0" prefHeight="426.0" prefWidth="738.0">
+              <columns>
+                <TableColumn fx:id="CustomerIDColumn" prefWidth="75.0" text="CustomerID" />
+                <TableColumn fx:id="NameColumn" prefWidth="115.0" text="Name" />
+                  <TableColumn fx:id="AddressColumn" prefWidth="141.0" text="Address" />
+                  <TableColumn fx:id="PostalCodeColumn" prefWidth="92.0" text="Postal code" />
+                  <TableColumn fx:id="PhoneColumn" prefWidth="92.0" text="Phone" />
+                  <TableColumn fx:id="FirstLevelDivisionColumn" prefWidth="113.0" text="First Level Division" />
+                  <TableColumn fx:id="CountryColumn" prefWidth="107.0" text="Country" />
+              </columns>
+            </TableView>
+            <Button fx:id="AddCustomerButton" layoutX="40.0" layoutY="356.0" mnemonicParsing="false" onAction="#AddCustomerButtonClicked" text="Add Customer" />
+            <Button fx:id="ModifyButton" layoutX="328.0" layoutY="21.0" mnemonicParsing="false" onAction="#ModifyButtonClicked" text="Modify" />
+            <Button fx:id="DeleteButton" layoutX="397.0" layoutY="21.0" mnemonicParsing="false" onAction="#DeleteButtonClicked" text="Delete" />
+            <Button fx:id="Backbutton" layoutX="16.0" layoutY="453.0" mnemonicParsing="false" onAction="#backbuttonClicked" text="Back" />
+            <Button fx:id="SaveButton" layoutX="148.0" layoutY="356.0" mnemonicParsing="false" onAction="#SaveButtonClicked" text="Save" />
+            <Button fx:id="CancelButton" layoutX="207.0" layoutY="356.0" mnemonicParsing="false" onAction="#CancelButtonClicked" text="Cancel" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

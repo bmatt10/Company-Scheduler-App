@@ -1,0 +1,27 @@
+author: Brendan Matthews
+Email: bmatt10@wgu.edu
+student application version: V 9/15/20 +
+date: 7/14/2021
+IDE: IntelliJ IDEA 2021.1.2 (Community Edition)
+JDK version: Java SE 11.0.4
+JavaFX version: JavaFx-SDK-11.0.2
+MySQL Connector Driver version: mysql-connector-java-8.0.25
+
+Directions to run the program:
+This application is for creating appointments and customers.
+The second language in the log in form is French
+The main form has a button to create customers on the top left
+The main form has a button to create/ modify/ delete appointments on the bottom of the page
+The main form has a button to view the reports page on the top right
+The javadoc index.html file is under Task 1 C195 > Task 1 BM > javadoc
+
+Lambda functions:
+The lambada functions can be found in the following two methods:
+Controller>UpdateAppointment (method = public void BackButtonClicked)
+Controller>AppointmentMenu (method =public void DeleteAppointmentClicked )
+
+Additional report from A3f:
+The additional report in this program is a chart that shows the number of appointments per customer
+It is found under the "View Reports" button from the Appointment Menu Page.
+It is the report on the bottom right of the "Reports" page with the bar chart.
+The bar chart shows the number of total appointments on the Y axis and has the customer ID on the x axis.

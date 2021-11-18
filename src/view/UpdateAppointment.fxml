@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateAppointment">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="214.0" layoutY="21.0" text="Update Appointment">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="AptIDLabel" layoutX="23.0" layoutY="103.0" text="Appointment ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ApptIDText" disable="true" layoutX="140.0" layoutY="101.0" prefHeight="25.0" prefWidth="117.0" />
+            <Label fx:id="TitleLabel" layoutX="23.0" layoutY="137.0" text="Title">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="DescriptionLabel" layoutX="23.0" layoutY="167.0" text="Description">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LocationLabel" layoutX="23.0" layoutY="200.0" text="Location">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ContactLabel" layoutX="24.0" layoutY="228.0" text="Contact">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="TypeLabel" layoutX="26.0" layoutY="255.0" text="Type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TitleText" layoutX="140.0" layoutY="135.0" prefHeight="25.0" prefWidth="117.0" />
+            <TextField fx:id="DescriptionText" layoutX="140.0" layoutY="165.0" prefHeight="25.0" prefWidth="117.0" />
+            <TextField fx:id="LocationText" layoutX="140.0" layoutY="198.0" prefHeight="25.0" prefWidth="117.0" />
+            <ComboBox fx:id="ContactCB" layoutX="141.0" layoutY="226.0" prefHeight="25.0" prefWidth="117.0" />
+            <Label fx:id="DateLabel" layoutX="313.0" layoutY="103.0" prefHeight="20.0" prefWidth="71.0" text="Start Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="312.0" layoutY="137.0" prefHeight="20.0" prefWidth="84.0" text="Start Hour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="CustomerIDLabel" layoutX="315.0" layoutY="251.0" text="Customer ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="USerIDLabel" layoutX="320.0" layoutY="291.0" text="User ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CustomerIDText" layoutX="403.0" layoutY="253.0" prefHeight="25.0" prefWidth="139.0" />
+            <Button fx:id="SaveButton" layoutX="60.0" layoutY="303.0" mnemonicParsing="false" onAction="#SaveButtonClicked" text="Save" />
+            <Button fx:id="BackButton" layoutX="121.0" layoutY="303.0" mnemonicParsing="false" onAction="#BackButtonClicked" text="Cancel" />
+            <DatePicker fx:id="Date" layoutX="397.0" layoutY="101.0" />
+            <TextField fx:id="StartHour" layoutX="390.0" layoutY="135.0" prefHeight="25.0" prefWidth="48.0" />
+            <Label layoutX="312.0" layoutY="210.0" prefHeight="20.0" prefWidth="84.0" text="End Hour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EndHour" layoutX="390.0" layoutY="208.0" prefHeight="25.0" prefWidth="48.0" />
+            <Label layoutX="458.0" layoutY="137.0" prefHeight="20.0" prefWidth="84.0" text="Start Minute">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="458.0" layoutY="211.0" prefHeight="20.0" prefWidth="84.0" text="End Minute">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EndMinute" layoutX="536.0" layoutY="208.0" prefHeight="25.0" prefWidth="48.0" />
+            <TextField fx:id="StartMinute" layoutX="536.0" layoutY="135.0" prefHeight="25.0" prefWidth="48.0" />
+            <Label fx:id="DateLabel1" layoutX="313.0" layoutY="168.0" prefHeight="20.0" prefWidth="71.0" text="End Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="EndDate" layoutX="397.0" layoutY="165.0" />
+            <ComboBox fx:id="UserCB" layoutX="387.0" layoutY="287.0" prefHeight="25.0" prefWidth="71.0" />
+            <ComboBox fx:id="TypeCB" layoutX="140.0" layoutY="253.0" prefHeight="25.0" prefWidth="117.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
