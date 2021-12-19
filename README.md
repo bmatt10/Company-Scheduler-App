@@ -9,6 +9,7 @@ IDE: IntelliJ IDEA 2021.1.2 (Community Edition)
 JDK version: Java SE 11.0.4
 JavaFX version: JavaFx-SDK-11.0.2
 MySQL Connector Driver version: mysql-connector-java-8.0.25
+Database in MySQL Workbench
 
 Directions to run the program:
 This application is for creating appointments and customers.
